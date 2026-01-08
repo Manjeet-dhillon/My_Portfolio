@@ -1,0 +1,450 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Manjeet Singh — Cloud / DevOps / IT Support Portfolio" />
+  <title>Manjeet Singh | Cloud & DevOps Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="icon" href="assets/favicon.svg" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Ambient background -->
+  <canvas id="particles" aria-hidden="true"></canvas>
+  <div class="noise" aria-hidden="true"></div>
+
+  <!-- Header -->
+  <header class="header" id="top">
+    <nav class="nav container">
+      <a class="brand" href="#top" aria-label="Go to top">
+        <span class="brand__mark">MS</span>
+        <span class="brand__text">Manjeet</span>
+      </a>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav__links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#learning">Learning</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact" class="btn btn--sm">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero container">
+      <div class="hero__left">
+        <div class="hero__badge">
+          <span class="pulse"></span>
+          <span>Open to entry-level roles</span>
+        </div>
+
+        <h1 class="hero__title">
+          Hi, I’m <span class="grad">Manjeet Singh</span> 👋
+        </h1>
+
+        <p class="hero__headline">
+          Cloud / DevOps / IT Support – MSc IT (Cloud Computing) @ UWS London
+        </p>
+
+        <p class="hero__sub">
+          Building cloud-ready apps, automation, and real projects with CI/CD.
+        </p>
+
+        <div class="hero__cta">
+          <a class="btn" href="#contact">Send a Query</a>
+          <a class="btn btn--ghost" href="#experience">See Experience</a>
+        </div>
+
+        <div class="hero__links">
+          <a class="chip" href="https://www.linkedin.com/in/manjeet-singh-b9909230a/" target="_blank" rel="noreferrer">
+            <span class="icon" aria-hidden="true">in</span> LinkedIn
+          </a>
+          <a class="chip" href="https://github.com/Manjeet-dhillon" target="_blank" rel="noreferrer">
+            <span class="icon" aria-hidden="true">&lt;/&gt;</span> GitHub
+          </a>
+          <a class="chip" href="mailto:Manjeetsinght655@gmail.com">
+            <span class="icon" aria-hidden="true">@</span> Email
+          </a>
+        </div>
+      </div>
+
+      <div class="hero__right">
+        <div class="card card--glow">
+          <div class="card__top">
+            <div class="dots" aria-hidden="true"><span></span><span></span><span></span></div>
+            <span class="mono">live_status</span>
+          </div>
+          <div class="terminal" role="img" aria-label="Animated terminal showing Manjeet's tech stack">
+            <div class="terminal__line"><span class="terminal__prompt">manjeet@cloud</span>:<span class="terminal__path">~</span>$ <span class="terminal__cmd">whoami</span></div>
+            <div class="terminal__line terminal__out">Cloud enthusiast • Quick learner • Builder</div>
+            <div class="terminal__line"><span class="terminal__prompt">manjeet@cloud</span>:<span class="terminal__path">~</span>$ <span class="terminal__cmd">stack --top</span></div>
+            <div class="terminal__line terminal__out">AWS • Docker • Jenkins • Git/GitHub • SQL</div>
+            <div class="terminal__line"><span class="terminal__prompt">manjeet@cloud</span>:<span class="terminal__path">~</span>$ <span class="terminal__cmd">status</span></div>
+            <div class="terminal__line terminal__out">Learning daily. Shipping weekly. 🚀</div>
+            <div class="terminal__line"><span class="terminal__prompt">manjeet@cloud</span>:<span class="terminal__path">~</span>$ <span class="terminal__cursor">█</span></div>
+          </div>
+
+          <div class="stats">
+            <div class="stat">
+              <div class="stat__k">Focus</div>
+              <div class="stat__v">Cloud + DevOps</div>
+            </div>
+            <div class="stat">
+              <div class="stat__k">Strength</div>
+              <div class="stat__v">Quick learning</div>
+            </div>
+            <div class="stat">
+              <div class="stat__k">Mode</div>
+              <div class="stat__v">Hands-on</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="marquee" aria-hidden="true">
+          <div class="marquee__track">
+            <span>AWS</span><span>Docker</span><span>CI/CD</span><span>Jenkins</span><span>GitHub</span><span>Linux</span><span>SQL</span><span>HTML</span><span>CSS</span>
+            <span>AWS</span><span>Docker</span><span>CI/CD</span><span>Jenkins</span><span>GitHub</span><span>Linux</span><span>SQL</span><span>HTML</span><span>CSS</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section container" id="about">
+      <div class="section__head">
+        <h2>About Me</h2>
+        <p class="muted">A quick intro — energetic, clear, recruiter-friendly.</p>
+      </div>
+
+      <div class="grid grid--2">
+        <div class="panel reveal">
+          <h3>Who I am</h3>
+          <p>
+            I am an MSc IT (Cloud Computing) student at UWS London, targeting entry-level Cloud, DevOps, and IT Support roles.
+            I work with cloud fundamentals, version control, and automation tools including AWS, Git/GitHub, CI/CD, Docker, and Jenkins.
+            I’m a quick learner and a passionate cloud enthusiast, consistently building hands-on projects to turn concepts into real-world skills.
+          </p>
+          <div class="mini">
+            <div class="mini__tag">Quick learner</div>
+            <div class="mini__tag">Cloud enthusiast</div>
+            <div class="mini__tag">Team-ready</div>
+          </div>
+        </div>
+
+        <div class="panel reveal">
+          <h3>What I’m looking for</h3>
+          <ul class="list">
+            <li><span class="check">✓</span> Cloud Support / Junior DevOps / IT Support opportunities</li>
+            <li><span class="check">✓</span> Environments where I can learn fast and contribute daily</li>
+            <li><span class="check">✓</span> Real projects: deployments, automation, troubleshooting</li>
+          </ul>
+
+          <div class="callout">
+            <div class="callout__title mono">Currently building</div>
+            <div class="callout__body">Cloud + CI/CD mini-projects to show real skills (not just certificates).</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section container" id="skills">
+      <div class="section__head">
+        <h2>Skills</h2>
+        <p class="muted">Your stack — displayed with energy.</p>
+      </div>
+
+      <div class="skills">
+        <div class="skillCard reveal">
+          <div class="skillCard__top">
+            <span class="skillCard__icon">☁️</span>
+            <h3>Cloud</h3>
+          </div>
+          <p class="muted">AWS (fundamentals & core services)</p>
+          <div class="chips">
+            <span class="chip chip--soft">AWS</span>
+          </div>
+        </div>
+
+        <div class="skillCard reveal">
+          <div class="skillCard__top">
+            <span class="skillCard__icon">⚙️</span>
+            <h3>DevOps</h3>
+          </div>
+          <p class="muted">Version control + automation</p>
+          <div class="chips">
+            <span class="chip chip--soft">Git</span>
+            <span class="chip chip--soft">GitHub</span>
+            <span class="chip chip--soft">CI/CD</span>
+            <span class="chip chip--soft">Docker</span>
+            <span class="chip chip--soft">Jenkins</span>
+          </div>
+        </div>
+
+        <div class="skillCard reveal">
+          <div class="skillCard__top">
+            <span class="skillCard__icon">🧠</span>
+            <h3>Programming</h3>
+          </div>
+          <p class="muted">Building backend + automation</p>
+          <div class="chips">
+            <span class="chip chip--soft">Python</span>
+            <span class="chip chip--soft">Java</span>
+          </div>
+        </div>
+
+        <div class="skillCard reveal">
+          <div class="skillCard__top">
+            <span class="skillCard__icon">🗄️</span>
+            <h3>Databases</h3>
+          </div>
+          <p class="muted">Data storage & queries</p>
+          <div class="chips">
+            <span class="chip chip--soft">SQL</span>
+            <span class="chip chip--soft">MySQL</span>
+            <span class="chip chip--soft">SQLite</span>
+          </div>
+        </div>
+
+        <div class="skillCard reveal">
+          <div class="skillCard__top">
+            <span class="skillCard__icon">🌐</span>
+            <h3>Web</h3>
+          </div>
+          <p class="muted">Clean, responsive UI</p>
+          <div class="chips">
+            <span class="chip chip--soft">HTML</span>
+            <span class="chip chip--soft">CSS</span>
+          </div>
+        </div>
+
+        <div class="skillCard reveal">
+          <div class="skillCard__top">
+            <span class="skillCard__icon">🖥️</span>
+            <h3>OS</h3>
+          </div>
+          <p class="muted">Comfortable in daily workflows</p>
+          <div class="chips">
+            <span class="chip chip--soft">Linux</span>
+            <span class="chip chip--soft">Windows</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Learning -->
+    <section class="section container" id="learning">
+      <div class="section__head">
+        <h2>Ongoing Learning</h2>
+        <p class="muted">What I’m actively improving right now.</p>
+      </div>
+
+      <div class="learning">
+        <div class="learnCard reveal">
+          <div class="learnCard__title">AWS</div>
+          <div class="learnCard__text">Cloud fundamentals & core services</div>
+          <div class="bar"><span style="--w:78%"></span></div>
+        </div>
+        <div class="learnCard reveal">
+          <div class="learnCard__title">Docker</div>
+          <div class="learnCard__text">Containerization & practical workflows</div>
+          <div class="bar"><span style="--w:72%"></span></div>
+        </div>
+        <div class="learnCard reveal">
+          <div class="learnCard__title">CI/CD</div>
+          <div class="learnCard__text">Pipelines with GitHub + Jenkins</div>
+          <div class="bar"><span style="--w:70%"></span></div>
+        </div>
+        <div class="learnCard reveal">
+          <div class="learnCard__title">Linux & Networking</div>
+          <div class="learnCard__text">Basics that matter in real jobs</div>
+          <div class="bar"><span style="--w:66%"></span></div>
+        </div>
+      </div>
+
+      <div class="note reveal">
+        <div class="note__title mono">Tip:</div>
+        <div class="note__body">This section is easy to update — open <span class="mono">index.html</span> and change the items.</div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section class="section container" id="education">
+      <div class="section__head">
+        <h2>Courses & Education</h2>
+        <p class="muted">Your academic foundation.</p>
+      </div>
+
+      <div class="timeline">
+        <div class="tlItem reveal">
+          <div class="tlItem__dot"></div>
+          <div class="tlItem__card">
+            <div class="tlItem__top">
+              <h3>MSc Information Technology (Cloud Computing)</h3>
+              <span class="pill">Ongoing</span>
+            </div>
+            <p class="muted">University of the West of Scotland (UWS) — London campus</p>
+          </div>
+        </div>
+
+        <div class="tlItem reveal">
+          <div class="tlItem__dot"></div>
+          <div class="tlItem__card">
+            <div class="tlItem__top">
+              <h3>Bachelor of Computer Applications (BCA)</h3>
+              <span class="pill pill--soft">Completed</span>
+            </div>
+            <p class="muted">Computer Applications foundation: programming + databases + web basics</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section container" id="experience">
+      <div class="section__head">
+        <h2>Experience</h2>
+        <p class="muted">Real exposure — presented strongly.</p>
+      </div>
+
+      <div class="grid grid--2">
+        <article class="expCard reveal">
+          <div class="expCard__top">
+            <h3>Internship Trainee</h3>
+            <span class="pill">May 2025 – Aug 2025</span>
+          </div>
+          <p class="muted"><strong>Faspi Enterprises Private Limited</strong> • On-site • India</p>
+          <ul class="list">
+            <li><span class="check">✓</span> Contributed to backend development using <strong>Java</strong> and <strong>OOP</strong>.</li>
+            <li><span class="check">✓</span> Worked with <strong>SQL</strong>, debugging, and writing reusable code.</li>
+            <li><span class="check">✓</span> Performed <strong>unit testing</strong> and improved code reliability.</li>
+          </ul>
+          <div class="chips">
+            <span class="chip chip--soft">Java</span>
+            <span class="chip chip--soft">SQL</span>
+            <span class="chip chip--soft">Unit Testing</span>
+          </div>
+        </article>
+
+        <article class="expCard reveal">
+          <div class="expCard__top">
+            <h3>Java Development Intern</h3>
+            <span class="pill">Mar 2025 – Apr 2025</span>
+          </div>
+          <p class="muted"><strong>InternPe</strong> • Remote</p>
+          <ul class="list">
+            <li><span class="check">✓</span> Hands-on work in Java development and coding fundamentals.</li>
+            <li><span class="check">✓</span> Strengthened problem-solving through practical tasks.</li>
+          </ul>
+          <div class="chips">
+            <span class="chip chip--soft">Java</span>
+            <span class="chip chip--soft">Problem Solving</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section container" id="contact">
+      <div class="section__head">
+        <h2>Send a Query</h2>
+        <p class="muted">This form works without a backend using your email client (mailto). You can upgrade to Formspree later.</p>
+      </div>
+
+      <div class="grid grid--2">
+        <div class="panel reveal">
+          <h3>Let’s connect</h3>
+          <p class="muted">
+            Want to discuss a role, internship, or project? Send a message — I reply fast.
+          </p>
+
+          <div class="contactLinks">
+            <a class="contactLink" href="mailto:Manjeetsinght655@gmail.com">
+              <span class="contactLink__icon">@</span>
+              <div>
+                <div class="contactLink__k">Email</div>
+                <div class="contactLink__v">Manjeetsinght655@gmail.com</div>
+              </div>
+            </a>
+            <a class="contactLink" href="https://www.linkedin.com/in/manjeet-singh-b9909230a/" target="_blank" rel="noreferrer">
+              <span class="contactLink__icon">in</span>
+              <div>
+                <div class="contactLink__k">LinkedIn</div>
+                <div class="contactLink__v">/in/manjeet-singh-b9909230a</div>
+              </div>
+            </a>
+            <a class="contactLink" href="https://github.com/Manjeet-dhillon" target="_blank" rel="noreferrer">
+              <span class="contactLink__icon">&lt;/&gt;</span>
+              <div>
+                <div class="contactLink__k">GitHub</div>
+                <div class="contactLink__v">Manjeet-dhillon</div>
+              </div>
+            </a>
+          </div>
+
+          <div class="callout">
+            <div class="callout__title mono">Upgrade idea</div>
+            <div class="callout__body">
+              If you want a real form (no mailto), use Formspree or Netlify Forms. Instructions are inside README.
+            </div>
+          </div>
+        </div>
+
+        <form class="form reveal" id="contactForm">
+          <label>
+            <span>Name</span>
+            <input type="text" name="name" placeholder="Your name" required />
+          </label>
+
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" placeholder="you@example.com" required />
+          </label>
+
+          <label>
+            <span>Subject</span>
+            <input type="text" name="subject" placeholder="e.g., Cloud Support Role" required />
+          </label>
+
+          <label>
+            <span>Message</span>
+            <textarea name="message" rows="6" placeholder="Write your message..." required></textarea>
+          </label>
+
+          <button class="btn btn--block" type="submit">
+            Send Message 🚀
+          </button>
+
+          <p class="form__hint muted">
+            Clicking send will open your email app with the message pre-filled.
+          </p>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer container">
+      <div class="footer__left">
+        <div class="mono">© <span id="year"></span> Manjeet Singh</div>
+        <div class="muted">Built with HTML • CSS • JS</div>
+      </div>
+      <div class="footer__right">
+        <a class="link" href="#top">Back to top ↑</a>
+      </div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
